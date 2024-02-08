@@ -1,7 +1,32 @@
 body{
     
-    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-color: rgb(65, 71, 110);
     
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+}
+
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
 }
 
