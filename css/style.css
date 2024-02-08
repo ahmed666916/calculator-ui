@@ -38,6 +38,10 @@
     margin: 0.25rem;
   
   }
+
+  .calculator__key:hover {
+    background-color: #008CBA;
+  }
   .calculator__key:active,
   .calculator__key:focus {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
