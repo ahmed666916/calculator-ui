@@ -7,7 +7,11 @@ calculatorKeys.addEventListener('click', function(event) {
         const buttonText = event.target.textContent;
         if (event.target.classList.contains('calculator__key--operator')) {
             handleButtonClick(" " + buttonText + " ");
-        } else {
+        } else if(event.target.classList.contains('calculator__key--enter')) {
+			operate();
+			return;
+		}
+		else {
             handleButtonClick(buttonText);
         }
 
