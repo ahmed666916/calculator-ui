@@ -89,3 +89,9 @@ function operate(a, b) {
 }
 
 
+function displayResult(result) {
+    display.innerHTML = result;
+}
+
+
+
