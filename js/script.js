@@ -31,7 +31,9 @@ function clearDisplay() {
 function handleButtonClick(buttonText) {
 
 
-	
+	if (display.innerHTML === "0") {
+		display.innerHTML = "";
+	} 
     display.innerHTML += `${buttonText}`;
 
 }
