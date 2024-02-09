@@ -10,6 +10,9 @@ calculatorKeys.addEventListener('click', function(event) {
         } else if(event.target.classList.contains('calculator__key--enter')) {
 			operate();
 			return;
+		}else if(event.target.classList.contains('all_clear')) {
+			clearDisplay();
+
 		}
 		else {
             handleButtonClick(buttonText);
@@ -19,6 +22,10 @@ calculatorKeys.addEventListener('click', function(event) {
     }
 });
 
+
+function clearDisplay() {
+	display.innerHTML = "0";
+}
 
 
 function handleButtonClick(buttonText) {
