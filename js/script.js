@@ -63,3 +63,29 @@ function divide(a, b) {
     return a / b;
 }
 
+function operate(a, b) {
+    let inputArray = getInputText();
+    let num1 = inputArray[0];
+    let num2 = inputArray[1];
+    let operator = inputArray[2];
+    if (operator === "+") {
+        let sum = add(num1, num2);
+        return displayResult(sum) ;
+        
+    }else if(operator === "-") {
+        let difference = subtract(num1, num2);
+
+        return displayResult(difference);
+    }else if(operator === "×") {
+        let product = multiply(num1, num2);
+        return displayResult(product);
+    }else if(operator === "÷") {
+        let division = divide(num1, num2);
+        return displayResult(division);
+    }else {
+        alert("Error!");
+    }
+
+}
+
+
