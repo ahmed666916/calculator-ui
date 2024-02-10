@@ -43,6 +43,11 @@ function getInputText() {
     //console.log(inputValue);
     //console.log(typeof(inputValue));
     let numArray = inputValue.split(" ");
+
+    if (numArray.length > 3) {
+        multipleInput(numArray);
+        
+    }
     let num1 = parseFloat(numArray[0]);
     let num2 = parseFloat(numArray[2]);
     let operator = numArray[1];
@@ -58,6 +63,10 @@ function getInputText() {
 
     return inputArray;
 
+}
+
+function multipleInput(numArray) {
+    
 }
 
 function add(a, b) {
